@@ -13,4 +13,4 @@ api = tweepy.API(auth)
 
 public_tweets = api.mentions_timeline(count = 1)
 for tweet in public_tweets:
-    print (tweet)
+    print (tweet.text)
